@@ -1,0 +1,35 @@
+$width-mobile: 768px;
+$width-tablet: 1000px;
+$width-desktop: 1440px;
+
+$font-general: "Rounded Mplus 1c", sans-serif;
+
+.page {
+  height: 100%;
+}
+
+.page__body {
+  min-width: 320px;
+  max-width: $width-desktop;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 73px;
+  align-content: start;
+  font-family: $font-general;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  color: $black;
+  background-color: $white;
+}
+
+.page__container-overflow {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+picture {
+  line-height: 0;
+}
