@@ -1,8 +1,4 @@
-$width-mobile: 768px;
-$width-tablet: 1000px;
-$width-desktop: 1440px;
-
-$font-general: "Rounded Mplus 1c", sans-serif;
+$font-general: 'M PLUS Rounded 1c', sans-serif;
 
 .page {
   height: 100%;
@@ -21,13 +17,15 @@ $font-general: "Rounded Mplus 1c", sans-serif;
   line-height: 23px;
   color: $black;
   background-color: $white;
-}
+  box-sizing: border-box;
 
-.page__container-overflow {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  overflow: hidden;
+  @media (max-width: $width-tablet) {
+    padding: 0 47px;
+  }
+
+  @media (max-width: $width-mobile) {
+    padding: 0 20px;
+  }
 }
 
 picture {
