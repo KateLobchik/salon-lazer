@@ -18,10 +18,9 @@
 <body class="page__body">
 
   <header class="page__header page-header">
-    <h1 class="page-header__logo-title">
-      <a class="page-header__logo-link" href="#">Depil King</a>
-    </h1>
-
+    <div class="page-header__logo-wrapper">
+      <h1 class="page-header__logo-title">Depil King</h1>
+    </div>
 
     <nav class="main-nav">
       <input class="main-nav__checkbox" id="menu__toggle" type="checkbox" />
@@ -29,23 +28,63 @@
         <span class="main-nav__menu-burger"></span>
       </label>
 
-      <ul class="main-nav__list">
-        <li class="main-nav__list-item">
-          <a class="main-nav__link" href="#">Шугаринг</a>
-        </li>
-        <li class="main-nav__list-item">
-          <a class="main-nav__link" href="#">Лазерная эпиляция</a>
-        </li>
-        <li class="main-nav__list-item">
-          <a class="main-nav__link" href="#">Обучение</a>
-        </li>
-        <li class="main-nav__list-item">
-          <a class="main-nav__link" href="#">Отзывы</a>
-        </li>
-        <li class="main-nav__list-item">
-          <a class="main-nav__link" href="#">Контакты</a>
-        </li>
-      </ul>
+      <div class="main-nav__wrapper-menu">
+        <ul class="main-nav__list">
+          <li class="main-nav__list-item">
+            <a class="main-nav__link" href="page1_wax.html">Шугаринг</a>
+          </li>
+          <li class="main-nav__list-item">
+            <a class="main-nav__link" href="#">Лазерная эпиляция</a>
+          </li>
+          <li class="main-nav__list-item">
+            <a class="main-nav__link" href="#">Обучение</a>
+          </li>
+          <li class="main-nav__list-item">
+            <a class="main-nav__link" href="#">Отзывы</a>
+          </li>
+          <li class="main-nav__list-item">
+            <a class="main-nav__link" href="#">Контакты</a>
+          </li>
+        </ul>
+
+        <div class="main-nav__contacts">
+          <p class="main-nav__contacts-adress">Depil King. Студия эпиляции №1 в Кингисеппе</p>
+          <ul class="main-nav__contacts-numbers phone-numbers">
+            <li class="phone-numbers__phone-numder">
+              <a class="phone-numbers__phone-link" href="tel:+79111655121">8 911 165-51-21</a>
+              <p class="phone-numbers__phone-name">Елена</p>
+            </li>
+            <li class="phone-numbers__phone-numder">
+              <a class="phone-numbers__phone-link" href="tel:+79006547519">8 900 654-75-19</a>
+              <p class="phone-numbers__phone-name">Алёна</p>
+            </li>
+          </ul>
+          <ul class="main-nav__social social">
+            <li class="social__item">
+              <a class="social__link" href="#" target="_blank" aria-label="Инстаграм">
+                <svg class="social__link-instagram" width="24" height="24">
+                  <use href="img/icons/sprite-icons.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#" target="_blank" aria-label="WhatsApp">
+                <svg class="social__link-whatsapp" width="24" height="24">
+                  <use href="img/icons/sprite-icons.svg#wtsapp"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#" target="_blank" aria-label="Вконтакте">
+                <svg class="social__link-vk" width="24" height="24">
+                  <use href="img/icons/sprite-icons.svg#vk"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
     </nav>
 
     <a class="button-delivery page-header__button" href="tel:+79111655121">Заказать</a>
@@ -422,8 +461,8 @@
           <p class="phone-numbers__phone-name">Елена</p>
         </li>
         <li class="phone-numbers__phone-numder">
-          <a class="phone-numbers__phone-link" href="tel:+79006547519">8 900 654-75-198</a>
-          <p class="phone-numbers__phone-name">Алёна (проверить номер!)</p>
+          <a class="phone-numbers__phone-link" href="tel:+79006547519">8 900 654-75-19</a>
+          <p class="phone-numbers__phone-name">Алёна</p>
         </li>
       </ul>
 

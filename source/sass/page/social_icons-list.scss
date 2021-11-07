@@ -1,0 +1,35 @@
+.social {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+  list-style: none;
+}
+
+.social__item {
+  margin-right: 15px;
+}
+
+.social__link {
+  display: block;
+  margin: 0;
+  padding: 0;
+  color: $purple;
+
+  &:hover,
+  &:focus {
+    color: $hover;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+// .social__link-instagram {
+  // width: 25px;
+  // height: 25px;
+// }

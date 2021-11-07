@@ -1,7 +1,7 @@
 .button-delivery {
   display: inline-block;
   margin: 0;
-  padding: 5px 23px 5px 23px;
+  padding: 5px 23px;
   width: fit-content;
   height: fit-content;
   font-weight: 500;
@@ -14,6 +14,7 @@
   box-sizing: border-box;
 
   @media (max-width: $width-tablet) {
+    padding: 8px 18px;
     font-size: 15px;
     line-height: 18px;
   }
