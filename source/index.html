@@ -63,21 +63,21 @@
             <li class="social__item">
               <a class="social__link" href="#" target="_blank" aria-label="Инстаграм">
                 <svg class="social__link-instagram" width="24" height="24">
-                  <use href="img/icons/social/sprite-icons.svg#instagram"></use>
+                  <use href="img/icons/sprite-icons.svg#instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link" href="#" target="_blank" aria-label="WhatsApp">
                 <svg class="social__link-whatsapp" width="24" height="24">
-                  <use href="img/icons/social/sprite-icons.svg#wtsapp"></use>
+                  <use href="img/icons/sprite-icons.svg#wtsapp"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link" href="#" target="_blank" aria-label="Вконтакте">
                 <svg class="social__link-vk" width="24" height="24">
-                  <use href="img/icons/social/sprite-icons.svg#vk"></use>
+                  <use href="img/icons/sprite-icons.svg#vk"></use>
                 </svg>
               </a>
             </li>
@@ -124,7 +124,7 @@
             <h4 class="services-item__title">Шугаринг и ваксинг</h4>
             <p class="services-item__description">Уже с первого посещения количество волос сократится,
               а новые волоски будут расти тонкими и мягкими!</p>
-            <a class="button-delivery services-item__button">Подробнее</a>
+            <a class="button-delivery services-item__button" href="page1_wax.html">Подробнее</a>
           </div>
         </li>
         <li class="services-item lazer">
@@ -141,7 +141,7 @@
             <p class="services-item__description">Волосы удаляются медицинским лазерным аппаратом MAGIC ONE, который
               позволит добиться гладкости навсегда.
             </p>
-            <a class="button-delivery services-item__button">Подробнее</a>
+            <a class="button-delivery services-item__button" href="#">Подробнее</a>
           </div>
         </li>
       </ul>
@@ -153,7 +153,7 @@
         <li class="our-features__item feature-safety">
           <h4 class="our-features__title">Безопасность</h4>
           <p class="our-features__description">
-            У нашего лазера MAGIC ONE есть регистрационное удостоверение, что доказывает его безопасность.
+            У нашего лазера MAGIC ONE есть регистрационное удостоверение, что доказывает его безопасность.<br>
             Всё стерильно и обрабатывается после каждого клиента. Каждые 2 часа проводиться полная дезинфекция
             помещения.
           </p>
@@ -186,31 +186,56 @@
 
     <section class="stock">
       <h3 class="section-title">Акции</h3>
-      <article class="stock__item stock-new30">
-        <img src="https://via.placeholder.com/380x460" alt="">
-        <div class="stock__wrapper-description">
-          <h4 class="stock__description">-30 % на процедуру
-            лазерной эпиляции
-            для новых клиентов Depil king </h4>
+      <div class="stock__items-wrapper">
+        <article class="stock__item stock-new30">
+          <div class="stock__item__container-image">
+            <picture>
+              <source type="image/webp" srcset="img/stock/lazer30.webp 1x, img/stock/lazer30@2x.webp 2x">
+
+              <img class="stock__item__image" src="img/stock/lazer30.jpg" srcset="img/stock/lazer30@2x.jpg 2x"
+                width="380" height="450" alt="">
+            </picture>
+          </div>
+          <div class="stock__wrapper-description">
+            <h4 class="stock__title">
+              <span class="stock__sale stock__sale--30">-30 %</span> на процедуру
+              лазерной эпиляции</h4>
+            <p class="stock__description">для новых клиентов Depil king</p>
+          <a class="button-delivery stock-button" href="tel:+79111655121">Записаться</a>
         </div>
-        <a class="stock-button">Записаться</a>
-      </article>
-      <article class="stock__item stock-friend">
-        <img src="https://via.placeholder.com/380x460" alt="">
-        <div class="stock__wrapper-description">
-          <h4 class="stock__description">Приведи подругу
-            и получи бонус -500₽</h4>
+        </article>
+        <article class="stock__item stock-friend">
+          <div class="stock__item__container-image">
+            <picture>
+              <source type="image/webp" srcset="img/stock/with-friend.webp 1x, img/stock/with-friend@2x.webp 2x">
+
+              <img class="stock__item__image" src="img/stock/with-friend.jpg" srcset="img/stock/with-friend@2x.jpg 2x"
+                width="380" height="450" alt="">
+            </picture>
+          </div>
+          <div class="stock__wrapper-description">
+            <h4 class="stock__title">Приведи подругу
+              и получи бонус <span class="stock__sale stock__sale--friend">-500₽</span></h4>
+          <a class="button-delivery stock-button" href="tel:+79111655121">Записаться</a>
         </div>
-        <a class="stock-button">Записаться</a>
-      </article>
-      <article class="stock__item stock-new990">
-        <img src="https://via.placeholder.com/380x460" alt="">
-        <div class="stock__wrapper-description">
-          <h4 class="stock__description">Шугаринг/ваксинг бикини + подмышки всего за 990₽
-            для новых клиентов Depil king</h4>
+        </article>
+        <article class="stock__item stock-new990">
+          <div class="stock__item__container-image">
+            <picture>
+              <source type="image/webp" srcset="img/stock/wax-990.webp 1x, img/stock/wax-990@2x.webp 2x">
+
+              <img class="stock__item__image" src="img/stock/wax-990.jpg" srcset="img/stock/wax-990.jpg 2x" width="380"
+                height="450" alt="">
+            </picture>
+          </div>
+          <div class="stock__wrapper-description">
+            <h4 class="stock__title">
+              Шугаринг/ваксинг бикини + подмышки всего за <span class="stock__sale stock__sale--new990">990₽</span></h4>
+            <p class="stock__description">для новых клиентов Depil king</p>
+          <a class="button-delivery stock-button" href="tel:+79111655121">Записаться</a>
         </div>
-        <a class="stock-button">Записаться</a>
-      </article>
+        </article>
+      </div>
     </section>
 
     <section class="masters">
