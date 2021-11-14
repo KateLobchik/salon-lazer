@@ -1,0 +1,35 @@
+.promo {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 0 0 50px 0;
+  padding: 69px 747px 79px 79px;
+  position: relative;
+}
+
+.main-title {
+  margin: 0;
+  padding: 0 0 40px 0;
+  font-size: 36px;
+  line-height: 46px;
+  font-weight: bold;
+}
+
+.main-description {
+  margin: 0;
+  padding: 0 30px 50px 0;
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.promo__container-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.promo__image {
+  border-radius: 15px;
+}

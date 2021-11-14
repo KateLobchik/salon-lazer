@@ -63,21 +63,21 @@
             <li class="social__item">
               <a class="social__link" href="#" target="_blank" aria-label="Инстаграм">
                 <svg class="social__link-instagram" width="24" height="24">
-                  <use href="img/icons/sprite-icons.svg#instagram"></use>
+                  <use href="img/icons/social/sprite-icons.svg#instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link" href="#" target="_blank" aria-label="WhatsApp">
                 <svg class="social__link-whatsapp" width="24" height="24">
-                  <use href="img/icons/sprite-icons.svg#wtsapp"></use>
+                  <use href="img/icons/social/sprite-icons.svg#wtsapp"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link" href="#" target="_blank" aria-label="Вконтакте">
                 <svg class="social__link-vk" width="24" height="24">
-                  <use href="img/icons/sprite-icons.svg#vk"></use>
+                  <use href="img/icons/social/sprite-icons.svg#vk"></use>
                 </svg>
               </a>
             </li>
@@ -87,34 +87,62 @@
       </div>
     </nav>
 
-    <a class="button-delivery page-header__button" href="tel:+79111655121">Заказать</a>
+    <a class="button-delivery page-header__button" href="tel:+79111655121">Записаться</a>
   </header>
 
   <main class="page-main">
 
     <section class="promo">
       <h2 class="main-title">Студия эпиляции №1 в Кингисеппе</h2>
-      <p>Мы избавим тебя от нежелательных волос безопасными и эффективными методами. С нами ты забудешь о раздражениях
+      <p class="main-description">Мы избавим тебя от нежелательных волос безопасными и эффективными методами. С нами ты
+        забудешь о раздражениях
         и будешь уверенна в себе на 100% </p>
-      <a class="button-delivery promo__button" href="tel:+79111655121">Заказать</a>
+      <a class="button-delivery promo__button" href="tel:+79111655121">Записаться</a>
+      <div class="promo__container-image">
+        <picture>
+          <source type="image/webp" srcset="img/promo/main-promo.webp 1x, img/promo/main-promo@2x.webp 2x">
+
+          <img class="promo__image" src="img/promo/main-promo.jpg" srcset="img/promo/main-promo@2x.jpg 2x" width="1220"
+            height="500" alt="">
+        </picture>
+      </div>
     </section>
 
     <section class="services">
       <h3 class="section-title">Услуги</h3>
       <ul class="services__list">
         <li class="services-item wax">
-          <h4>Шугаринг и ваксинг</h4>
-          <img src="https://via.placeholder.com/390x356" alt="">
-          <p>Уже с первого посещения количество волос сократится,
-            а новые волоски будут расти тонкими и мягкими!</p>
-          <a class="services-item__button">Подробнее</a>
+          <div class="services-item__container-image">
+            <picture>
+              <source type="image/webp" srcset="img/services/wax.webp 1x, img/services/wax@2x.webp 2x">
+
+              <img class="services-item__image" src="img/services/wax.jpg" srcset="img/services/wax@2x.jpg 2x"
+                width="590" height="356" alt="">
+            </picture>
+          </div>
+          <div class="services-item__container-text">
+            <h4 class="services-item__title">Шугаринг и ваксинг</h4>
+            <p class="services-item__description">Уже с первого посещения количество волос сократится,
+              а новые волоски будут расти тонкими и мягкими!</p>
+            <a class="button-delivery services-item__button">Подробнее</a>
+          </div>
         </li>
         <li class="services-item lazer">
-          <img src="https://via.placeholder.com/390x356" alt="">
-          <h4>Лазерная эпиляция</h4>
-          <p>Волосы удаляются медицинским лазерным аппаратом MAGIC ONE, который позволит добиться гладкости навсегда.
-          </p>
-          <a class="services-item__button">Подробнее</a>
+          <div class="services-item__container-image">
+            <picture>
+              <source type="image/webp" srcset="img/services/lazer.webp 1x, img/services/lazer@2x.webp 2x">
+
+              <img class="services-item__image" src="img/services/lazer.jpg" srcset="img/services/lazer@2x.jpg 2x"
+                width="590" height="356" alt="">
+            </picture>
+          </div>
+          <div class="services-item__container-text">
+            <h4 class="services-item__title">Лазерная эпиляция</h4>
+            <p class="services-item__description">Волосы удаляются медицинским лазерным аппаратом MAGIC ONE, который
+              позволит добиться гладкости навсегда.
+            </p>
+            <a class="button-delivery services-item__button">Подробнее</a>
+          </div>
         </li>
       </ul>
     </section>
@@ -236,7 +264,7 @@
           <p class="education-item__curse">Экспресс курс</p>
           <h4 class="education-item__title">Базовое обучение. Шугаринг</h4>
           <div class="education-item__points">
-            <p class="education-item__point point-duration">1 день</p>
+            <p class="education-item__point point-time">1 день</p>
             <p class="education-item__point point-individual">Индивидуальный</p>
           </div>
           <ul class="education-item__features-list">
@@ -280,7 +308,7 @@
           <p class="education-item__curse">Курс </p>
           <h4 class="education-item__title">Сам себе мастер</h4>
           <div class="education-item__points">
-            <p class="education-item__point point-duration">1 день</p>
+            <p class="education-item__point point-time">1 день</p>
             <p class="education-item__point point-group">3-4 человека</p>
           </div>
           <ul class="education-item__features-list">
@@ -324,7 +352,7 @@
           <p class="education-item__curse">Курс</p>
           <h4 class="education-item__title">Базовое обучение. Шугаринг</h4>
           <div class="education-item__points">
-            <p class="education-item__point point-duration">2 дня</p>
+            <p class="education-item__point point-time">2 дня</p>
             <p class="education-item__point point-individual">Индивидуальный</p>
           </div>
           <ul class="education-item__features-list">
@@ -367,7 +395,7 @@
           <p class="education-item__curse">Курс</p>
           <h4 class="education-item__title">Повышение квалификации по шугарингу</h4>
           <div class="education-item__points">
-            <p class="education-item__point point-duration">1 день</p>
+            <p class="education-item__point point-time">1 день</p>
             <p class="education-item__point point-individual">Индивидуальный</p>
           </div>
           <p class="education-item__for-master">Для мастеров работающих более 3-х месяцев</p>
