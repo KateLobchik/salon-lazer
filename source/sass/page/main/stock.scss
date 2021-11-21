@@ -20,7 +20,6 @@
   margin: 0;
   padding: 0;
   position: relative;
-  z-index: -10;
 
   &::after {
     content: "";
@@ -69,6 +68,7 @@
 .stock__sale {
   display: inline-block;
   position: relative;
+  z-index: 1;
 
   &::after {
     position: absolute;

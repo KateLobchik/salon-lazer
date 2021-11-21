@@ -1,0 +1,38 @@
+.education-item {
+  margin: 0;
+  padding: 40px 40px 40px;
+  min-width: 485px;
+  background-color: $light-purple;
+  box-sizing: border-box;
+}
+
+.education-item__curse {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.education-item__title {
+  display: block;
+  margin: 0;
+  padding: 0 0 17px;
+  font-size: 27px;
+  line-height: 42px;
+  font-weight: 700;
+  width: 100%;
+}
+
+.education-item__points {
+  display: flex;
+  gap: 12px;
+}
+
+.education-item__point {
+  margin: 0;
+  padding: 1px 7px 1px 31px;
+  font-size: 14px;
+  line-height: 27px;
+  border: 1px solid $dark-purple;
+  border-radius: 5px;
+}
