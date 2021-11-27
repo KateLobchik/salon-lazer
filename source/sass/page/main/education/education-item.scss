@@ -1,5 +1,6 @@
 .education-item {
   margin: 0;
+  margin-right: 40px;
   padding: 40px 40px 40px;
   min-width: 485px;
   background-color: $light-purple;
@@ -10,6 +11,10 @@
 
 .education-item--top {
   padding-right: 30px;
+}
+
+.education-item:first-child {
+  margin-right: 0;
 }
 
 .education-item__curse {

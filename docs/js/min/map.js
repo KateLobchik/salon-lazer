@@ -1,0 +1,1 @@
+{const t=document.querySelector(".contacts-map--interactive");document.querySelector(".contacts-map--img").classList.remove("contacts-map--active"),t.classList.add("contacts-map--active")}

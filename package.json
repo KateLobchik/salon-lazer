@@ -48,6 +48,6 @@
     "node": "14.15.0"
   },
   "dependencies": {
-    "tiny-slider": "^2.9.3"
+    "tiny-slider": "^2.9.4"
   }
 }
