@@ -13,10 +13,38 @@
 }
 
 .phone-numbers__phone-link {
+  display: inline-block;
   margin-right: 5px;
   font-weight: bold;
   color: inherit;
   text-decoration: none;
+  width: max-content;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: '';
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    font-weight: normal;
+    background-color: $dark-purple;
+    opacity: 0;
+    transition: all 400ms ease;
+  }
+}
+
+.phone-numbers__phone-link:hover,
+.phone-numbers__phone-link:focus {
+  &::before {
+    opacity: 1;
+    transition: all 400ms ease-in-out;
+  }
+}
+
+.phone-numbers__phone-link:active{
+  opacity: 0.6;
 }
 
 .phone-numbers__phone-name {

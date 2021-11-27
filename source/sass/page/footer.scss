@@ -1,0 +1,26 @@
+.page-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 60px 0;
+  width: 100%;
+}
+
+.page-footer__description {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 27px;
+  width: 100%;
+}
+
+.page-footer__contacts {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+  font-size: 18px;
+  line-height: 30px;
+}
