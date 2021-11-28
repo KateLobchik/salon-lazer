@@ -6,11 +6,26 @@
   padding: 0 0 55px;
 }
 
+.contacts--page5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.contacts__wrapper--page5 {
+  padding-top: 40px;
+}
+
 .contacts__adress {
   margin: 0;
   padding: 0 0 32px;
   font-size: 20px;
   line-height: 40px;
+}
+
+.contacts__adress--page5 {
+  padding: 47px 0 12px;
 }
 
 .contacts__phone-numbers {
@@ -23,12 +38,21 @@
   line-height: 30px;
 }
 
+.contacts__phone-numbers--page5 {
+  padding: 0 0 10px;
+}
+
 
 .contacts__map-wrapper {
   width: 905px;
   height: 460px;
   border-radius: 15px;
   overflow: hidden;
+}
+
+.contacts__map-wrapper--page5 {
+  width: 1220px;
+  height: 800px;
 }
 
 .contacts-map {

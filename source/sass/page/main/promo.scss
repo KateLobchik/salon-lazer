@@ -8,6 +8,19 @@
   position: relative;
 }
 
+.promo-page1 {
+  padding: 115px 580px 111px 79px;
+}
+
+.promo-page2 {
+  padding: 81px 580px 81px 79px;
+}
+
+.promo-call {
+  margin-bottom: 120px;
+  padding: 49px 600px 60px 40px;
+}
+
 .main-title {
   margin: 0;
   padding: 0 0 40px 0;
@@ -21,6 +34,13 @@
   padding: 0 30px 50px 0;
   font-size: 18px;
   line-height: 32px;
+}
+
+.main-description--call {
+  padding: 0 30px 32px 0;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 40px;
 }
 
 .promo__container-image {

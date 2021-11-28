@@ -124,3 +124,13 @@ overflow: hidden;
     linear-gradient(-90deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0) 30%);
   }
 }
+
+.tns-visually-hidden {
+  display: none;
+}
+
+.education-slider-page3 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}

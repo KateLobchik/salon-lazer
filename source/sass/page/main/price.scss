@@ -1,0 +1,36 @@
+.price {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 0 60px;
+  box-sizing: border-box;
+}
+
+.price__section-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 0 60px;
+  width: 630px;
+  box-sizing: border-box;
+}
+
+.price__title {
+  align-self: flex-start;
+  margin: 0;
+  padding: 0 0 20px;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 42px;
+}
+
+.price__item {
+  margin: 0 0 50px;
+  padding: 0;
+}
+
+.price__item:last-child {
+  margin: 0;
+}

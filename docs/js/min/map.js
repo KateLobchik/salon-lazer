@@ -1,1 +1,1 @@
-{const t=document.querySelector(".contacts-map--interactive");document.querySelector(".contacts-map--img").classList.remove("contacts-map--active"),t.classList.add("contacts-map--active")}
+const interactiveMap=document.querySelector(".contacts-map--interactive"),imgMap=document.querySelector(".contacts-map--img");imgMap&&(imgMap.classList.remove("contacts-map--active"),interactiveMap.classList.add("contacts-map--active"));
