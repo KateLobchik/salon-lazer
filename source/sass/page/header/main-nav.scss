@@ -27,7 +27,7 @@ $calcHeightMobileMenu: calc(#{$heightScreen} - #{$heightMenu});
     flex-direction: column;
     justify-content: space-between;
     align-items: stretch;
-    padding: 0 20px 40px;
+    padding: 0 20px 80px;
     width: 100vw;
     height: 0;
     background-color: $white;
@@ -76,6 +76,7 @@ $calcHeightMobileMenu: calc(#{$heightScreen} - #{$heightMenu});
   background-color: $dark-purple;
   border: none;
   border-radius: 5px;
+  // transition: all 400ms ease-in-out;
 
   &::before {
     position: absolute;
@@ -85,6 +86,7 @@ $calcHeightMobileMenu: calc(#{$heightScreen} - #{$heightMenu});
     height: 2px;
     background-color: $dark-purple;
     border-radius: 5px;
+    transition: all 400ms ease-in-out;
   }
 
   &::after {
@@ -95,6 +97,7 @@ $calcHeightMobileMenu: calc(#{$heightScreen} - #{$heightMenu});
     height: 2px;
     background-color: $dark-purple;
     border-radius: 5px;
+    transition: all 400ms ease-in-out;
   }
 }
 
@@ -209,11 +212,6 @@ $calcHeightMobileMenu: calc(#{$heightScreen} - #{$heightMenu});
 
   &:hover,
   &:focus {
-
-    // font-weight: 700;
-    // text-shadow: 0 0 .7px $dark-purple;
-    // transform: scale(1.2);
-    //
     &::before {
       opacity: 1;
       transition: all 400ms ease-in-out;
@@ -237,7 +235,6 @@ $calcHeightMobileMenu: calc(#{$heightScreen} - #{$heightMenu});
     font-weight: normal;
     background-color: $dark-purple;
     opacity: 0.3;
-    // transition: all 400ms ease;
 
     @media (max-width: $width-mobile) {
       height: 1px;
@@ -264,16 +261,19 @@ $calcHeightMobileMenu: calc(#{$heightScreen} - #{$heightMenu});
 @media (max-width: $width-mobile) {
   .main-nav__checkbox:checked~.main-nav__button>.main-nav__menu-burger {
     transform: rotate(45deg);
+    transition: all 400ms ease-in-out;
   }
 
   .main-nav__checkbox:checked~.main-nav__button>.main-nav__menu-burger::before {
     top: 0;
     transform: rotate(0);
+    transition: all 400ms ease-in-out;
   }
 
   .main-nav__checkbox:checked~.main-nav__button>.main-nav__menu-burger::after {
     top: 0;
     transform: rotate(90deg);
+    transition: all 400ms ease-in-out;
   }
 
   .main-nav__checkbox:checked~.main-nav__wrapper-menu {
