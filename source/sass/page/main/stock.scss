@@ -1,6 +1,16 @@
 .stock {
   margin: 0;
   padding: 0 0 88px 0;
+
+  @media (max-width: $width-tablet) {
+    margin: 0;
+    padding: 0 0 60px 0;
+  }
+
+  @media (max-width: $width-mobile) {
+    margin: 0 0 40px 0;
+    padding: 0 20px;
+  }
 }
 
 .stock__items-wrapper {
@@ -9,17 +19,65 @@
   gap: 40px;
   margin: 0;
   padding: 0;
+  width: 100%;
+  box-sizing: border-box;
+
+  @media (max-width: 1150px) {
+    gap: 25px;
+  }
+
+  @media (max-width: $width-tablet) {
+    gap: 15px;
+  }
+
+  @media (max-width: 900px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  @media (max-width: $width-mobile) {
+    align-items: center;
+  }
+
+  @media (max-width: 450px) {
+    gap: 15px;
+  }
 }
 
 .stock__item {
   box-sizing: border-box;
   position: relative;
+  width: 100%;
+  box-sizing: border-box;
+
+  @media (max-width: 900px) {
+    width: 70%;
+  }
+
+  @media (max-width: 570px) {
+    width: 70%;
+  }
+
+  @media (max-width: 500px) {
+    width: 80%;
+  }
+
+  @media (max-width: 450px) {
+    width: 100%;
+  }
 }
 
-.stock__item__container-image {
+.stock__container-image {
   margin: 0;
   padding: 0;
+  width: 100%;
+  height: auto;
   position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
 
   &::after {
     content: "";
@@ -31,10 +89,67 @@
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.35) 67.44%);
     border-radius: 15px;
   }
+
+  @media (max-width: 900px) {
+    min-height: 250px;
+    border-radius: 15px;
+
+    &::after {
+      bottom: 0px;
+    }
+  }
+
+  @media (max-width: $width-mobile) {
+    min-height: 300px;
+    border-radius: 15px;
+  }
+
 }
 
-.stock__item__image {
+.stock__image {
+  height: auto;
+  width: 100%;
   border-radius: 15px;
+
+  @media (max-width: 900px) {
+    position: absolute;
+    width: 100%;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    object-fit: cover;
+    box-sizing: border-box;
+    z-index: -10;
+  }
+
+  @media (max-width: $width-mobile) {
+    position: absolute;
+    width: 100%;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    object-fit: cover;
+    box-sizing: border-box;
+    z-index: -10;
+  }
+}
+
+.stock__image-friend {
+  @media (max-width: 900px) {
+    top: 105%;
+  }
+  @media (max-width: $width-mobile) {
+    top: 53%;
+  }
+}
+
+.stock__image-wax {
+  @media (max-width: 900px) {
+    top: 110%;
+  }
+  @media (max-width: $width-mobile) {
+    top: 100%;
+  }
 }
 
 .stock__wrapper-description {
@@ -45,6 +160,8 @@
   padding: 0 20px 33px 30px;
   color: $white;
   box-sizing: border-box;
+
+
 }
 
 .stock__title {
@@ -52,6 +169,21 @@
   padding: 0;
   font-size: 28px;
   line-height: 48px;
+
+  @media (max-width: 1200px) {
+    font-size: 17px;
+    line-height: 23px;
+  }
+
+  @media (max-width: $width-tablet) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @media (max-width: $width-mobile) {
+    font-size: 14px;
+    line-height: 24px;
+  }
 }
 
 .stock__description {
@@ -59,6 +191,26 @@
   padding: 0;
   font-size: 18px;
   line-height: 42px;
+
+  @media (max-width: 1350px) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (max-width: 1200px) {
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  @media (max-width: $width-tablet) {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  @media (max-width: $width-mobile) {
+    font-size: 10px;
+    line-height: 14px;
+  }
 }
 
 .stock-button {
@@ -80,6 +232,27 @@
     background-color: $fucsia;
     border-radius: 5px;
     z-index: -1;
+
+    @media (max-width: 1350px) {
+      width: 91px;
+    height: 47px;
+    }
+
+
+    @media (max-width: 1200px) {
+      width: 91px;
+    height: 47px;
+    }
+
+    @media (max-width: $width-tablet) {
+      width: 91px;
+    height: 47px;
+    }
+
+    @media (max-width: $width-mobile) {
+      width: 46px;
+      height: 25px;
+    }
   }
 }
 
@@ -99,5 +272,9 @@
   &::after {
     width: 81px;
     transform: rotate(-5.57deg);
+
+    @media (max-width: $width-mobile) {
+      width: 42px;
+    }
   }
 }
