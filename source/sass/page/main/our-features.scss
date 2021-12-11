@@ -1,6 +1,14 @@
 .our-features {
   margin: 0;
   padding: 0 0 88px 0;
+
+  @media (max-width: $width-tablet) {
+    padding: 0 0px 60px;
+  }
+
+  @media (max-width: $width-mobile) {
+    padding: 0 20px 40px;
+  }
 }
 
 .our-features__list {
@@ -31,6 +39,33 @@
     height: 1px;
     background-color: $purple;
   }
+
+  @media (max-width: $width-tablet) {
+    padding: 20px 0 20px 0;
+    gap: 30px;
+  }
+
+
+  @media (max-width: $width-mobile) {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px 0 20px 0;
+    gap: 25px;
+
+    &::before {
+      width: auto;
+      left: -20px;
+      right: -20px;
+    }
+
+    &::after {
+      width: auto;
+      left: -20px;
+      right: -20px;
+    }
+  }
 }
 
 .our-features__item {
@@ -44,6 +79,18 @@
     top: 5px;
     left: 0;
   }
+
+  @media (max-width: 1200px) {
+    padding: 0 0 0 40px;
+  }
+
+  @media (max-width: $width-tablet) {
+    padding: 0 0 0 35px;
+  }
+
+  @media (max-width: $width-mobile) {
+    padding: 0 0 0 30px;
+  }
 }
 
 .feature-safety {
@@ -54,6 +101,27 @@
     background-size: 32px 38px;
     background-position: 0 0;
     background-repeat: no-repeat;
+
+    @media (max-width: 1200px) {
+      top: -3px;
+      width: 23px;
+      height: 29px;
+      background-size: 23px 29px;
+    }
+
+    @media (max-width: $width-tablet) {
+      top: -4px;
+      width: 22px;
+      height: 29px;
+      background-size: 22px 29px;
+    }
+
+    @media (max-width: $width-mobile) {
+      top: -2px;
+      width: 18px;
+      height: 21px;
+      background-size: 18px 21px;
+    }
   }
 }
 .feature-masters {
@@ -64,6 +132,27 @@
     background-size: 35px 35px;
     background-position: 0 0;
     background-repeat: no-repeat;
+
+    @media (max-width: 1200px) {
+      top: -4px;
+      width: 29px;
+      height: 29px;
+      background-size: 29px 29px;
+    }
+
+    @media (max-width: $width-tablet) {
+      top: -6px;
+      width: 26px;
+      height: 29px;
+      background-size: 26px 29px;
+    }
+
+    @media (max-width: $width-mobile) {
+      top: -5px;
+      width: 22px;
+      height: 24px;
+      background-size: 22px 24px;
+    }
   }
 }
 
@@ -75,6 +164,27 @@
     background-size: 32px 38px;
     background-position: 0 0;
     background-repeat: no-repeat;
+
+    @media (max-width: 1200px) {
+      top: -3px;
+      width: 27px;
+      height: 30px;
+      background-size: 27px 30px;
+    }
+
+    @media (max-width: $width-tablet) {
+      top: -3px;
+      width: 25px;
+      height: 25px;
+      background-size: 25px 25px;
+    }
+
+    @media (max-width: $width-mobile) {
+      top: -2px;
+      width: 21px;
+      height: 21px;
+      background-size: 21px 21px;
+    }
   }
 }
 
@@ -86,6 +196,27 @@
     background-size: 32px 38px;
     background-position: 0 0;
     background-repeat: no-repeat;
+
+    @media (max-width: 1200px) {
+      top: -3px;
+      width: 27px;
+      height: 29px;
+      background-size: 27px 29px;
+    }
+
+    @media (max-width: $width-tablet) {
+      top: -3px;
+      width: 26px;
+      height: 26px;
+      background-size: 26px 26px;
+    }
+
+    @media (max-width: $width-mobile) {
+      top: -2px;
+      width: 21px;
+      height: 21px;
+      background-size: 21px 21px;
+    }
   }
 }
 
@@ -95,6 +226,24 @@
   font-size: 28px;
   line-height: 47px;
   font-weight: bold;
+
+  @media (max-width: 1200px) {
+    padding: 0 0px 8px 0;
+    font-size: 17px;
+    line-height: 24px;
+  }
+
+  @media (max-width: $width-tablet) {
+    padding: 0 0px 7px 0;
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  @media (max-width: $width-mobile) {
+    padding: 0 0px 5px 0;
+    font-size: 14px;
+    line-height: 16px;
+  }
 }
 
 .our-features__description {
@@ -102,4 +251,19 @@
   padding: 0;
   font-size: 18px;
   line-height: 30px;
+
+  @media (max-width: 1200px) {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  @media (max-width: $width-tablet) {
+    font-size: 12px;
+    line-height: 19px;
+  }
+
+  @media (max-width: $width-mobile) {
+    font-size: 10px;
+    line-height: 13px;
+  }
 }
