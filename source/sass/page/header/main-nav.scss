@@ -147,7 +147,7 @@ $calcHeightMobileMenu: calc(#{$heightScreen} - #{$heightMenu});
   }
 
   @media (max-width: 880px) {
-    padding: 8px 30px;
+    padding: 8px 15px;
   }
 
   @media (max-width: $width-mobile) {
@@ -170,6 +170,10 @@ $calcHeightMobileMenu: calc(#{$heightScreen} - #{$heightMenu});
   @media (max-width: $width-tablet) {
     font-size: 15px;
     line-height: 22px;
+  }
+
+  @media (max-width: 810px) {
+    font-size: 13px;
   }
 
   @media (max-width: $width-mobile) {

@@ -5,6 +5,7 @@
   width: 100%;
   margin: 0;
   padding: 10px 0;
+  box-sizing: border-box;
 
   @media (max-width: $width-tablet) {
     gap: 20px;
@@ -13,7 +14,7 @@
 
   @media (max-width: $width-mobile) {
     justify-content: flex-start;
-    padding: 25px 0;
+    padding: 25px 20px;
     gap: 0;
     // height: 100vh;
   }
