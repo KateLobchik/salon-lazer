@@ -42,4 +42,22 @@ picture {
   font-size: 28px;
   line-height: 42px;
   z-index: 10;
+
+  @media (max-width: 1200px) {
+    font-size: 23px;
+    line-height: 24px;
+    padding: 0 0px 25px 0;
+  }
+
+  @media (max-width: $width-tablet) {
+    font-size: 19px;
+    line-height: 20px;
+    padding: 0 0px 20px 0;
+  }
+
+  @media (max-width: $width-mobile) {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 0 0px 15px 0;
+  }
 }
