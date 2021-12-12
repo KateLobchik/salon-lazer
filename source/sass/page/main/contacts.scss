@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 30px;
   margin: 0;
   padding: 0 0 55px;
 }
@@ -11,6 +12,10 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+}
+
+.contacts__wrapper {
+  flex-grow: 1;
 }
 
 .contacts__wrapper--page5 {
@@ -34,7 +39,7 @@
   justify-content: flex-start;
   align-items: flex-start;
   gap: 5px;
-  padding: 0 0 45px;
+  padding: 20px 0 45px;
   line-height: 30px;
 }
 
@@ -60,6 +65,14 @@
   width: 100%;
   height: 100%;
   cursor: pointer;
+}
+
+.contacts__map-wrapper {
+  display: none;
+}
+
+.contacts__map-wrapper--active {
+  display: block;
 }
 
 .contacts-map--active {

@@ -1,5 +1,4 @@
 .phone-numbers {
-  width: 100%;
   margin: 0;
   padding: 0;
   font-size: inherit;
@@ -9,12 +8,20 @@
 
 .phone-numbers__phone-numder {
   display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
 
+.phone-numbers__phone-numder--footer {
+  margin: auto;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .phone-numbers__phone-link {
   display: inline-block;
-  margin-right: 5px;
   font-weight: bold;
   color: inherit;
   text-decoration: none;
@@ -49,5 +56,10 @@
 
 .phone-numbers__phone-name {
   margin: 0;
+  padding: 0;
+}
+
+.phone-numbers__phone-name--footer {
+  margin: 0 10px 0 0;
   padding: 0;
 }

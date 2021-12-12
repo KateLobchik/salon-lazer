@@ -33,7 +33,9 @@
   }
 }
 
-// .social__link-instagram {
-  // width: 25px;
-  // height: 25px;
-// }
+.social__icon {
+  @media (max-width: $width-tablet) {
+    width: 25px;
+    height: 25px;
+  }
+}
