@@ -1,5 +1,6 @@
 .review {
   box-sizing: border-box;
+
   @media (max-width: $width-mobile) {
     padding: 0 20px;
   }
@@ -36,6 +37,10 @@
   align-items: center;
   gap: 65px;
   padding-bottom: 55px;
+
+  @media (max-width: 600px) {
+    gap: 30px;
+  }
 }
 
 .review-item {
@@ -54,6 +59,11 @@
   padding: 30px 26px;
   width: 590px;
   box-sizing: border-box;
+
+  @media (max-width: $width-mobile) {
+    width: 100%;
+    padding: 20px;
+  }
 }
 
 .review-item__client-name {
@@ -174,6 +184,6 @@
   }
 
   @media (max-width: $width-mobile) {
-    padding: 0 0 60px;
+    padding: 0 0 50px;
   }
 }
