@@ -47,13 +47,9 @@
         <div class="main-nav__contacts">
           <p class="main-nav__contacts-adress">Depil King. Студия эпиляции №1 в Кингисеппе и Ивангороде</p>
           <ul class="main-nav__contacts-numbers phone-numbers">
-            <li class="phone-numbers__phone-numder">
-              <a class="phone-numbers__phone-link" href="tel:+79111655121">8 911 165-51-21</a>
-              <p class="phone-numbers__phone-name">Елена</p>
-            </li>
-            <li class="phone-numbers__phone-numder">
-              <a class="phone-numbers__phone-link" href="tel:+79006547519">8 900 654-75-19</a>
-              <p class="phone-numbers__phone-name">Алёна</p>
+            <li class="phone-numbers__phone-numder phone-numbers__phone-numder--footer">
+              <p class="phone-numbers__phone-name phone-numbers__phone-name--footer">Телефон студии</p>
+              <a class="phone-numbers__phone-link" href="tel:+79119571263">8-911-957-12-63</a>
             </li>
           </ul>
           <ul class="main-nav__social social">
@@ -66,7 +62,7 @@
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link" href="https://wa.me/+79111655121" target="_blank" aria-label="WhatsApp">
+              <a class="social__link" href="https://wa.me/+79119571263" target="_blank" aria-label="WhatsApp">
                 <svg class="social__icon social__link-whatsapp" width="24" height="24">
                   <use href="img/icons/sprite-icons.svg#wtsapp"></use>
                 </svg>
@@ -85,7 +81,7 @@
       </div>
     </nav>
 
-    <a class="button-delivery page-header__button" href="tel:+79111655121">Записаться</a>
+    <a class="button-delivery page-header__button" href="tel:+79119571263">Записаться</a>
   </header>
 
   <main class="page-main">
@@ -131,7 +127,7 @@
           <div class="services-item__container-text">
             <h4 class="services-item__title">Шугаринг и ваксинг</h4>
             <p class="services-item__description">Уже с первого посещения количество волос <br>сократится,
-              а <norb>&nbsp;новые</norb> волоски будут расти тонкими и мягкими!</p>
+              <span class="nowrap">а новые</span> волоски будут расти тонкими и мягкими!</p>
             <a class="button-delivery services-item__button" href="page1_wax.html">Подробнее</a>
           </div>
         </li>
@@ -146,7 +142,7 @@
           </div>
           <div class="services-item__container-text">
             <h4 class="services-item__title">Лазерная эпиляция</h4>
-            <p class="services-item__description">Волосы удаляются медицинским лазерным аппаратом MAGIC <norb>&nbsp;ONE
+            <p class="services-item__description">Волосы удаляются медицинским лазерным аппаратом <span class="nowrap">MAGIC ONE</span>
               </norb>, который
               позволит добиться гладкости навсегда.
             </p>
@@ -172,7 +168,7 @@
           <p class="our-features__description">
             В нашей студии работают только профессионалы.
             Мастера-лазерологи все с медицинским образованием.
-            А<norb>&nbsp;специалисты</norb> по шугарингу и ваксингу имеют большой опыт и прошли обучение в нашей студии
+            <span class="nowrap">А специалисты</span> по шугарингу и ваксингу имеют большой опыт и прошли обучение в нашей студии
             у топ-мастеров.
           </p>
         </li>
@@ -221,10 +217,10 @@
           <div class="stock__wrapper-description">
             <h4 class="stock__title">
               <span class="stock__sale stock__sale--30">-30 %</span> на процедуру
-              лазерной <norb>&nbsp;эпиляции</norb>
+              <span class="nowrap">лазерной эпиляции</span></norb>
             </h4>
             <p class="stock__description">для новых клиентов Depil king</p>
-            <a class="button-delivery stock-button" href="tel:+79111655121">Записаться</a>
+            <a class="button-delivery stock-button" href="tel:+79119571263">Записаться</a>
           </div>
         </article>
         <article class="stock__item stock-friend">
@@ -254,7 +250,7 @@
             <h4 class="stock__title">Приведи подругу
               и получи <span class="nowrap">бонус <span class="stock__sale stock__sale--friend">-500₽</span></span>
             </h4>
-            <a class="button-delivery stock-button" href="tel:+79111655121">Записаться</a>
+            <a class="button-delivery stock-button" href="tel:+79119571263">Записаться</a>
           </div>
         </article>
         <article class="stock__item stock-new990">
@@ -283,7 +279,7 @@
               Шугаринг/ваксинг бикини + подмышки <span class="nowrap">всего за <span
                   class="stock__sale stock__sale--new990">990₽</span></span></h4>
             <p class="stock__description">для новых клиентов Depil king</p>
-            <a class="button-delivery stock-button" href="tel:+79111655121">Записаться</a>
+            <a class="button-delivery stock-button" href="tel:+79119571263">Записаться</a>
           </div>
         </article>
       </div>
@@ -436,31 +432,36 @@
       <div class="contacts__wrapper">
         <h3 class="section-title">Контакты</h3>
 
-        <div class="contacts__adress adress">
-          <a class="adress__adress-item" alt="Показать карту с адресом">
+        <ul class="contacts__adress adress">
+          <li class="adress__adress-item" alt="Показать карту с адресом">
             <svg class="adress__map-icon adress__map-icon--active" width="30" height="30">
               <use href="img/icons/sprite-icons.svg#map-icon"></use>
             </svg>
-            <p class="adress__adress">
+            <input class="adress__map-input" type="radio" name="adress" value="kingisep"
+                    id="adress-kingisep" checked>
+            <label class="adress__adress" for="adress-kingisep">
               Кингисепп <br>
-              Воровского 18А<br>
+              <span class="nowrap">Воровского 18А</span><br>
               Деловой центр
-            </p>
-          </a>
-          <a class="adress__adress-item" alt="Показать карту с адресом">
+            </label>
+          </li>
+          <li class="adress__adress-item" alt="Показать карту с адресом">
             <svg class="adress__map-icon" width="30" height="30">
               <use href="img/icons/sprite-icons.svg#map-icon"></use>
             </svg>
-            <p class="adress__adress">
+            <input class="adress__map-input" type="radio" name="adress" value="ivancity"
+                    id="adress-ivancity">
+            <label class="adress__adress" for="adress-ivancity">
               Ивангород<br>
-              Матросова 22а
-            </p>
-          </a>
-        </div>
+              <span class="nowrap">Матросова 22а</span>
+            </label>
+          </li>
+        </ul>
+
         <ul class="contacts__phone-numbers phone-numbers">
           <li class="phone-numbers__phone-numder">
             <p class="phone-numbers__phone-name">Телефон студии</p>
-            <a class="phone-numbers__phone-link" href="tel:+79006547519">8-900-654-75-19</a>
+            <a class="phone-numbers__phone-link" href="tel:+79119571263">8-911-957-12-63</a>
           </li>
         </ul>
 
@@ -473,7 +474,7 @@
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link" href="https://wa.me/+79111655121" target="_blank" aria-label="WhatsApp">
+            <a class="social__link" href="https://wa.me/+79119571263" target="_blank" aria-label="WhatsApp">
               <svg class="social__icon social__link-whatsapp" width="30" height="30">
                 <use href="img/icons/sprite-icons.svg#wtsapp"></use>
               </svg>
@@ -488,42 +489,12 @@
           </li>
         </ul>
       </div>
-      <!-- <img src="https://via.placeholder.com/905x460" alt="карта"> -->
-      <div class="contacts__map-wrapper contacts__map-wrapper--active">
-        <a class="contacts-map contacts-map--img contacts-map--active" href="https://yandex.ru/maps/-/CCUuZ6r9CD">
-          <picture>
-            <!-- <source type="image/webp" media="(min-width: 1340px)"
-              srcset="img/map/desktop-map.webp 1x, img/map/desktop-map@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)"
-              srcset="img/map/tablet-map.webp 1x, img/map/tablet-map@2x.webp 2x">
-            <source type="image/webp" srcset="img/map/mobile-map.webp 1x, img/map/mobile-map@2x.webp 2x"> -->
-
-            <!-- <source media="(min-width: 1340px)" srcset="img/map/desktop-map.jpg 1x, img/map/desktop-map@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/map/tablet-map.jpg 1x, img/map/tablet-map@2x.jpg 2x"> -->
-            <img class="contacts-map__image" src="img/map/desktop-map.jpg" srcset="img/map/desktop-map@2x.jpg 2x"
-              width="905" height="460" alt="Карта Depil King по адресу Воровского 18А, Деловой центр в Кингисеппе"
-              loading="lazy">
-          </picture>
-        </a>
+      <div class="contacts__map-kingisep contacts__map-wrapper contacts__map-wrapper--active">
         <iframe class="contacts-map contacts-map--interactive"
           src="https://yandex.ru/map-widget/v1/?um=constructor%3Acd217f75e1fa4a7ee91f20f12b878610d82d786ba14daf67bff870a73f7df38f&amp;source=constructor"
           width="905" height="460" frameborder="0"></iframe>
       </div>
-      <div class="contacts__map-wrapper">
-        <a class="contacts-map contacts-map--img" href="https://yandex.ru/maps/?um=constructor%3A4f2e799aef0476d7f9f72a8ff0cdf74447c73b9bf0a41383bab41c3fed09127c&source=constructorLink">
-          <picture>
-            <!-- <source type="image/webp" media="(min-width: 1340px)"
-              srcset="img/map/desktop-map.webp 1x, img/map/desktop-map@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)"
-              srcset="img/map/tablet-map.webp 1x, img/map/tablet-map@2x.webp 2x">
-            <source type="image/webp" srcset="img/map/mobile-map.webp 1x, img/map/mobile-map@2x.webp 2x"> -->
-
-            <!-- <source media="(min-width: 1340px)" srcset="img/map/desktop-map.jpg 1x, img/map/desktop-map@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/map/tablet-map.jpg 1x, img/map/tablet-map@2x.jpg 2x"> -->
-            <img class="contacts-map__image" src="img/map/desktop-map.jpg" srcset="img/map/desktop-map@2x.jpg 2x"
-              width="905" height="460" alt="Карта Depil King по адресу Ивангород, улица Матросова 22а" loading="lazy">
-          </picture>
-        </a>
+      <div class="contacts__map-ivancity contacts__map-wrapper">
         <iframe class="contacts-map contacts-map--interactive"
           src="https://yandex.ru/map-widget/v1/?um=constructor%3A4f2e799aef0476d7f9f72a8ff0cdf74447c73b9bf0a41383bab41c3fed09127c&amp;source=constructor"
           width="905" height="460" frameborder="0"></iframe>
@@ -539,7 +510,7 @@
     <ul class="page-footer__contacts phone-numbers">
       <li class="phone-numbers__phone-numder phone-numbers__phone-numder--footer">
         <p class="phone-numbers__phone-name phone-numbers__phone-name--footer">Телефон студии</p>
-        <a class="phone-numbers__phone-link" href="tel:+79006547519">8-900-654-75-19</a>
+        <a class="phone-numbers__phone-link" href="tel:+79119571263">8-911-957-12-63</a>
       </li>
     </ul>
 
@@ -552,7 +523,7 @@
         </a>
       </li>
       <li class="social__item">
-        <a class="social__link" href="https://wa.me/+79111655121" target="_blank" aria-label="WhatsApp">
+        <a class="social__link" href="https://wa.me/+79119571263" target="_blank" aria-label="WhatsApp">
           <svg class="social__icon social__link-whatsapp" width="30" height="30">
             <use href="img/icons/sprite-icons.svg#wtsapp"></use>
           </svg>

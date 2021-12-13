@@ -1,6 +1,7 @@
 .our-features {
   margin: 0;
   padding: 0 0 88px 0;
+  box-sizing: border-box;
 
   @media (max-width: $width-tablet) {
     padding: 0 0px 60px;

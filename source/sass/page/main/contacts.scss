@@ -5,6 +5,16 @@
   gap: 30px;
   margin: 0;
   padding: 0 0 55px;
+  width: 100%;
+  box-sizing: border-box;
+
+  @media (max-width: $width-mobile) {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 30px;
+    padding-bottom: 30px;
+  }
 }
 
 .contacts--page5 {
@@ -16,6 +26,14 @@
 
 .contacts__wrapper {
   flex-grow: 1;
+  padding: 0 20px;
+
+  @media (max-width: $width-mobile) {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
 }
 
 .contacts__wrapper--page5 {
@@ -24,9 +42,7 @@
 
 .contacts__adress {
   margin: 0;
-  padding: 0 0 32px;
-  font-size: 20px;
-  line-height: 40px;
+  padding: 0px;
 }
 
 .contacts__adress--page5 {
@@ -41,6 +57,23 @@
   gap: 5px;
   padding: 20px 0 45px;
   line-height: 30px;
+
+  @media (max-width: 1350px) {
+    font-size: 17px;
+    line-height: 24px;
+  }
+
+  @media (max-width: $width-tablet) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @media (max-width: $width-mobile) {
+    flex-direction: row;
+    padding: 0 0 10px;
+    font-size: 14px;
+    line-height: 19px;
+  }
 }
 
 .contacts__phone-numbers--page5 {
@@ -53,6 +86,11 @@
   height: 460px;
   border-radius: 15px;
   overflow: hidden;
+  box-sizing: border-box;
+
+  @media (max-width: $width-mobile) {
+    width: 100%;
+  }
 }
 
 .contacts__map-wrapper--page5 {

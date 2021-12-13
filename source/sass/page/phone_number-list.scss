@@ -4,6 +4,21 @@
   font-size: inherit;
   line-height: inherit;
   list-style: none;
+
+  @media (max-width: 1350px) {
+    font-size: 17px;
+    line-height: 24px;
+  }
+
+  @media (max-width: $width-tablet) {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  @media (max-width: $width-mobile) {
+    font-size: 14px;
+    line-height: 19px;
+  }
 }
 
 .phone-numbers__phone-numder {

@@ -1,8 +1,25 @@
 .adress {
-  margin: 0;
-  padding: 0;
   max-width: 200px;
   list-style: none;
+
+  @media (max-width: $width-mobile) {
+    padding-top: 30px;
+    order: 1;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+  }
+
+  @media (max-width: 380px) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
 }
 
 .adress__adress-item {
@@ -18,17 +35,50 @@
   right: 0;
   transform: translate(0, -50%);
   opacity: 0.5;
+  transition: all 250ms ease-in-out;
 }
 
 .adress__map-icon--active {
   color: $fucsia;
   opacity: 1;
+  transition: all 250ms ease-in-out;
+}
+
+.adress__map-input {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  margin: 0;
+  transform: translate(0, -50%);
+  opacity: 0;
+  cursor: pointer;
 }
 
 .adress__adress {
+  display: block;
   margin: 0 0 20px;
-  padding: 0;
+  padding: 0 40px 0 0;
   width: 100%;
   font-size: 20px;
-  line-height: 25px;
+  line-height: 30px;
+  box-sizing: border-box;
+  cursor: pointer;
+
+  @media (max-width: 1350px) {
+    font-size: 17px;
+    line-height: 24px;
+  }
+
+  @media (max-width: $width-tablet) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @media (max-width: $width-mobile) {
+    margin: 0;
+    font-size: 14px;
+    line-height: 19px;
+  }
 }
