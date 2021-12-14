@@ -10,6 +10,26 @@
   overflow: hidden;
   background-color: $white;
   transition: all 1600ms ease-in-out;
+
+  @media (max-width: 1350px) {
+    height: 75px;
+  }
+
+  @media (max-width: 1200px) {
+    height: 70px;
+  }
+
+  @media (max-width: $width-tablet) {
+    height: 60px;
+  }
+
+  @media (max-width: $width-mobile) {
+    height: 40px;
+  }
+
+  @media (max-width: 380px) {
+    height: 50px;
+  }
 }
 
 .item-multi--price-close {
@@ -17,6 +37,22 @@
   overflow: hidden;
   background-color: $white;
   transition: all 1600ms ease-in-out;
+
+  @media (max-width: 1350px) {
+    height: 39px;
+  }
+
+  @media (max-width: 1200px) {
+    height: 36px;
+  }
+
+  @media (max-width: $width-tablet) {
+    height: 33px;
+  }
+
+  @media (max-width: $width-mobile) {
+    height: 30px;
+  }
 }
 
 .item-multi__button {
@@ -41,13 +77,47 @@
     background-size: 20px 20px;
     background-position: 0 0;
     background-repeat: no-repeat;
-    transform: translate(0, -50%) rotate(540deg);
+    transform: translate(0, -50%) rotate(180deg);
     transition: all 600ms ease-in-out;
+
+    @media (max-width: $width-tablet) {
+      width: 17px;
+      height: 17px;
+      background-size: 17px 17px;
+    }
+
+    @media (max-width: $width-mobile) {
+      right: 15px;
+      width: 13px;
+      height: 13px;
+      background-size: 13px 13px;
+    }
   }
 }
 
 .item-multi__question-button {
-  padding: 24px 100px 24px 40px;
+  padding: 24px 50px 24px 40px;
+  box-sizing: border-box;
+
+  @media (max-width: 1350px) {
+    padding: 24px 50px 24px 40px;
+  }
+
+  @media (max-width: 1200px) {
+    padding: 24px 50px 24px 40px;
+  }
+
+  @media (max-width: $width-tablet) {
+    padding: 21px 50px 21px 40px;
+  }
+
+  @media (max-width: $width-mobile) {
+    padding: 13px 50px 14px 20px;
+  }
+
+  @media (max-width: 380px) {
+    padding: 18px 35px 18px 10px;
+  }
 }
 
 .item-multi__button--close {
@@ -63,6 +133,26 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 40px;
+
+  @media (max-width: 1350px) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (max-width: 1200px) {
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  @media (max-width: $width-tablet) {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  @media (max-width: $width-mobile) {
+    font-size: 10px;
+    line-height: 14px;
+  }
 }
 
 .item-multi__content {
@@ -72,10 +162,38 @@
   font-weight: normal;
   font-size: 18px;
   line-height: 32px;
+
+  @media (max-width: 1350px) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (max-width: 1200px) {
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  @media (max-width: $width-tablet) {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  @media (max-width: $width-mobile) {
+    font-size: 10px;
+    line-height: 14px;
+  }
 }
 
 .item-multi__content-question {
   padding: 0 40px;
+
+  @media (max-width: $width-mobile) {
+    padding: 0 20px;
+  }
+
+  @media (max-width: 380px) {
+    padding: 0 10px;
+  }
 }
 
 .item-multi__all-info {
@@ -94,6 +212,26 @@
   line-height: 40px;
   font-weight: normal;
   border-bottom: 1px solid $purple;
+
+  @media (max-width: 1350px) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (max-width: 1200px) {
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  @media (max-width: $width-tablet) {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  @media (max-width: $width-mobile) {
+    font-size: 10px;
+    line-height: 14px;
+  }
 }
 
 .item-multi__info-price {
@@ -103,6 +241,26 @@
   line-height: 40px;
   font-weight: normal;
   border-bottom: 1px solid $purple;
+
+  @media (max-width: 1350px) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (max-width: 1200px) {
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  @media (max-width: $width-tablet) {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  @media (max-width: $width-mobile) {
+    font-size: 10px;
+    line-height: 14px;
+  }
 }
 
 .item-multi__last {
