@@ -362,8 +362,23 @@
 }
 
 .promo__image-mobile--page2 {
+  position: absolute;
+  width: auto;
+  height: 100%;
+  top: 0;
+  left: auto;
+  right: 0%;
+  transform: translate(0,0);
+  object-fit: cover;
+  box-sizing: border-box;
+  z-index: -10;
+  
+  @media (max-width: $width-mobile) {
+    height: 115%;
+  }
+
   @media (max-width: 450px) {
-    right: -43%;
+    right: -25%;
   }
   @media (max-width: 380px) {
     right: -43%;
