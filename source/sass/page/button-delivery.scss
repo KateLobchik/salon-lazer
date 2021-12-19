@@ -1,9 +1,11 @@
 .button-delivery {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 0;
-  padding: 7px 23px;
+  padding: 0px 23px;
   width: fit-content;
-  height: fit-content;
+  height: 41px;
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;
@@ -14,12 +16,14 @@
   box-sizing: border-box;
 
   @media (max-width: $width-tablet) {
-    padding: 8px 18px;
+    padding: 0px 18px;
+    height: 32px;
     font-size: 15px;
     line-height: 18px;
   }
 
   @media (max-width: $width-mobile) {
+    height: 31px;
     font-size: 12px;
     line-height: 15px;
   }
@@ -35,4 +39,19 @@
 .button-delivery:active {
   opacity: 0.6;
   transition: all 150ms ease-in-out;
+}
+
+
+.button-tel__desktop {
+  @media (max-width: $width-mobile) {
+    display: none;
+  }
+}
+
+.button-tel__mobile {
+  display: none;
+
+  @media (max-width: $width-mobile) {
+    display: block;
+  }
 }
