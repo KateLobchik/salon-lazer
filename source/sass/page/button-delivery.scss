@@ -40,18 +40,3 @@
   opacity: 0.6;
   transition: all 150ms ease-in-out;
 }
-
-
-.button-tel__desktop {
-  @media (max-width: $width-mobile) {
-    display: none;
-  }
-}
-
-.button-tel__mobile {
-  display: none;
-
-  @media (max-width: $width-mobile) {
-    display: block;
-  }
-}

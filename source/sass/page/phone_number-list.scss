@@ -93,6 +93,6 @@
   display: none;
 
   @media (max-width: $width-mobile) {
-    display: block;
+    display: flex;
   }
 }

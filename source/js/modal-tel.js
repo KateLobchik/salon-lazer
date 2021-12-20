@@ -8,7 +8,8 @@ const isEscEvent = (evt) => {
 };
 
 for (let i = 0; i < telButtons.length; i++) {
-  telButtons[i].addEventListener('click', () => {
+  telButtons[i].addEventListener('click', (evt) => {
+    evt.preventDefault();
     modal.classList.add('modal-tel--active');
     modalContent.classList.add('modal-tel__main-wrapper--active');
 
@@ -27,7 +28,7 @@ for (let i = 0; i < telButtons.length; i++) {
 
     document.addEventListener('keydown', onModalEscKeydown);
 
-    closeButton.addEventListener('click', (evt) => {
+    modal.addEventListener('click', (evt) => {
       if (!evt.target.closest('.modal-order__container')) {
         closeModal();
       }
